@@ -1,0 +1,174 @@
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    font-size: large;
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.bannerArea{
+    margin-top:210px;
+}
+
+.bannerAreaBottom{
+    background-color: #edf4fa;
+    height: 300px;
+    width: 100%;
+    padding: 50px;
+}
+
+/* .bannerImage{
+    height:500px;
+    margin: auto;
+
+}
+ */
+.carousel-inner > .carousel-item > img{
+    height: 100%;
+    width: 100%;
+    /* margin: auto; */
+}
+
+.h2Center{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.h5Center{
+    text-align: center;    
+}
+.line{
+    border-top: darkgray;
+    border-top-style: solid;
+    border-top-width: 5px;
+}
+
+.gridContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+    height: 400px;
+}
+
+.gridImage{
+    height: 300px;
+}
+.gridDescription{
+    height: 20px;
+}
+
+.viewContainer{
+    margin-top: 210px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.viewImage{
+    height: 500px;
+    margin: auto;
+}
+.viewDescription{
+    /* height: 20px; */
+    padding: 20px;
+}
+.viewButton{
+    margin: 20px;
+    background-color: #d7d7d7;
+    box-shadow: 3px 5px 5px #888888;
+    border-radius: 2px;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+.viewButton:hover {
+    transform: scale(1.1) perspective(1px)
+} 
+
+
+.cartContainer{
+    margin-top: 210px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.cartImage{
+    height: 200px;
+    margin: auto;
+}
+.cartDescription{
+    /* height: 20px; */
+    padding: 20px;
+}
+.cartButton{
+    margin: 20px;
+    background-color: #d7d7d7;
+    box-shadow: 3px 5px 5px #888888;
+    border-radius: 2px;
+    transition: all 1s ease;
+    transform: scale(1);
+}
+.cartButton:hover {
+      transform: scale(1.1) perspective(1px)
+} 
+
+.cartSummary{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.footerImage{
+    height: 50px;
+    margin: auto;
+}
+
+/* .mainArea{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#menubar{
+    height: 60px;
+    display: flex;
+}
+#menubarItem{
+    padding: 10px;
+}
+
+#menubarImg{
+    height: 70px;
+}
+
+.myContainer{
+    display: inline;
+    
+    margin: 20px;
+} */
+
+.testButton {
+    background-color: #d7d7d7;
+  box-shadow: 3px 5px 5px #888888;
+  border-radius: 2px;
+  transition: all 1s ease;
+  transform: scale(1);
+  }
+  
+ .testButton:hover {
+    /*  Making button bigger on hover  */
+      transform: scale(1.1) perspective(1px)
+  }
