@@ -9,43 +9,43 @@ new Vue({
         visible: false,
 
         cartItem: {
-                id: '',
-                name: '',
-                description: '',
-                price: '',
-                colour: '',
-                size: '',
-                imagePath: ''
-            },
+            id: '',
+            name: '',
+            description: '',
+            price: '',
+            colour: '',
+            size: '',
+            imagePath: ''
+        },
 
-            cartItems: [],
+        cartItems: [],
     },
 
     created: function () {
         this.selectedGarment = JSON.parse(localStorage.getItem("selectedGarment")) || [];
         this.cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-        
-        if (this.cartItems.length > 0){
+
+        if (this.cartItems.length > 0) {
             this.cartQuantity = this.cartItems.length;
             this.visible = true;
         }
-        else{
+        else {
             this.subTotal = "No items in the cart";
             this.visible = false;
         }
     },
-    
+
     methods: {
-         
-        saveColourSelection: function (myColour){
+
+        saveColourSelection: function (myColour) {
             this.selectedColour = myColour;
         },
 
-        saveSizeSelection: function (mySize){
+        saveSizeSelection: function (mySize) {
             this.selectedSize = mySize;
         },
 
-        addToCart: function(){
+        addToCart: function () {
             this.cartItem.name = this.selectedGarment.name;
             this.cartItem.description = this.selectedGarment.description;
             this.cartItem.price = this.selectedGarment.price;
@@ -55,21 +55,18 @@ new Vue({
 
             this.cartItems.push(this.cartItem);
 
-            if (this.cartItems.length > 0){
+            if (this.cartItems.length > 0) {
                 this.cartQuantity = this.cartItems.length;
                 this.visible = true;
             }
-            else{
+            else {
                 this.subTotal = "No items in the cart";
                 this.visible = false;
             }
-    
+
             localStorage.setItem("cartItems", JSON.stringify(this.cartItems));
         }
-        
+
     },
 
 })
-
-
-

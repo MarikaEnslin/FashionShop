@@ -24,7 +24,6 @@ body{
     width: 100%;
     padding: 50px;
 }
-
 /* .bannerImage{
     height:500px;
     margin: auto;
@@ -110,7 +109,8 @@ body{
 }
 .cartDescription{
     /* height: 20px; */
-    padding: 20px;
+    width: 400px;
+    padding-left: 20px;
 }
 .cartButton{
     margin: 20px;
@@ -126,14 +126,32 @@ body{
 
 .cartSummary{
     border-style: solid;
-    border-width: 5px;
+    border-width: 2px;
     border-color: black;
+    padding: 20px;
 }
 
 .footerImage{
     height: 50px;
     margin: auto;
 }
+
+.lookbookImageZoom{
+    overflow: hidden;
+
+}
+
+.lookbookImageZoom img {
+    width: 200px;
+    height: 250px;
+
+    transition: transform .5s ease-in-out;
+}
+
+.lookbookImageZoom:hover img {
+    transform: scale(1.5);
+}
+
 
 /* .mainArea{
     display: flex;
@@ -161,14 +179,32 @@ body{
 } */
 
 .testButton {
-    background-color: #d7d7d7;
+  background-color: #d7d7d7;
   box-shadow: 3px 5px 5px #888888;
   border-radius: 2px;
   transition: all 1s ease;
   transform: scale(1);
+  margin-left: 15px;
   }
   
  .testButton:hover {
     /*  Making button bigger on hover  */
       transform: scale(1.1) perspective(1px)
+  }
+  form {
+    border: 1px solid #c6c7cc;
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: auto;
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+  }
+
+  label, input {
+    display:inline-block
+  }
+
+  .form-group{
+      margin:20px;
   }
